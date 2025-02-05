@@ -16,9 +16,9 @@ This project analyzes the performance of marketing campaigns using data-driven i
 | Region         | Object | Geographic region |
 | Clicks         | Int  | Number of clicks |
 | Conversions    | Int  | Number of successful conversions |
-| CTR            | Float | Click-through rate (%) |
-| CPC            | Float | Cost per click ($) |
-| Conversion_Rate | Float | Conversion rate (%) |
+| CTR            | Float | Click-through rate (%) (Clicks / Budget) * 100|
+| CPC            | Float | Cost per click ($) (Budget / Clicks)|
+| Conversion_Rate | Float | Conversion rate (%) (Conversions / Clicks) * 100|
 | Success        | Int  | Binary success metric (1 = Success, 0 = No Success) |
 | Budget_Range   | Category | Budget classification |
 
@@ -48,8 +48,12 @@ This project analyzes the performance of marketing campaigns using data-driven i
 ## Insights
 
 Each type of content, platform and region has similar total conversion amounts.
-Youtube has the highest conversion rate percentage.
 
+Youtube has the highest conversion rate percentage, majority of them coming from Image, Story or Text content.
+
+Facebook conversion rates percentages are pretty much the same for all content types.
+
+Video and carousel had the lowest conversion rate percentage overall.
 ## Data Analysis
 
 
@@ -106,6 +110,34 @@ Image has the lowest click-through rate, but very high conversion rate.
 Carousel and video had the lowest conversion rate.
 
 ![obraz](https://github.com/user-attachments/assets/c443685c-ad51-4aca-94e9-45d14a994022)
+
+
+## **Content Type Per Platform Analysis**
+
+On Youtube, story has the highest click-through and cost per click, but conversion rate percentage is highest for image, story and text.
+
+![obraz](https://github.com/user-attachments/assets/c28a2e9e-313d-4b3b-9c78-0a8d2a29f70b)
+
+On Instagram carousel has the highest click-trhough rate by a wide margin, compared to other content types.
+Video cast he gihest cost perk click by a wide margin.
+Conversion rate percentage is somewhat evenly split between all of them, with carousel falling short.
+
+![obraz](https://github.com/user-attachments/assets/9e6a8eb2-78e4-4c25-a75b-2d780d74334a)
+
+
+On Google text has the highest click through rate, but second lowest conversion rate.
+Story and video has the highest conversion rate percentage
+
+![obraz](https://github.com/user-attachments/assets/6ea6a634-e95c-47ae-a127-e3417d495030)
+
+On LinkedIn, story has the highest click through rate, while text has highest cost per click.
+Tetxt dominates the conversion rate percentage by a wide margin.
+
+![obraz](https://github.com/user-attachments/assets/530cca5b-77df-48db-8f74-d748f7c3b64c)
+
+On Facebook text, video and carousel have the highest click through rate, but conversion rate percentage is pretty even between all content types.
+
+![obraz](https://github.com/user-attachments/assets/bb8514b8-26e2-48d1-9429-3102549bcdc6)
 
 
 ## **Region Performance Analysis**
